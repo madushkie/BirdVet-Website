@@ -5,17 +5,18 @@
 }
 
 .contact-summary {
-	height: 292px;		
+	height: 292px;
 }
 
 div.marketing div.row p {
 	text-align: justify;
 }
-h5{
+
+h5 {
 	display: inline;
 }
 
-div.alert-danger{
+div.alert-danger {
 	text-align: center;
 	font-style: bold;
 }
@@ -24,7 +25,7 @@ h5{
 	font-style: bold;
 }
 
-img.media-object{
+img.media-object {
 	padding: 5px;
 }
 
@@ -69,53 +70,17 @@ div.navigation{
 	background-color: #CCE680;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    float: left;
-}
-
-a.nav:link, a.nav:visited {
-    display: block;
-    font-weight: bold;
-    width: 100%;
-    color: #FFFFFF;
- 	padding: 22px;
-    background-color: #75A319;
-    text-align: center;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	margin-top: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-a.nav:hover, a.nav:active {
-    color: #FFFFFF;
-    background-color: #670FA1;
-}
-
-a.nav.active{
-	    color: #FFFFFF;
-    background-color: #670FA1;
-}
-
-
-img.logo{
+img.logo {
 	padding: 25px;
 }
 
 
-h4.contact{
+h4.contact {
 	font-weight: bold;
 }
 
 
-img.logo{
+img.logo {
 	float: left;
 }
 
@@ -142,60 +107,103 @@ ul {
 	padding: 0;
 }
 
-#sidebar-menu .main-menu a {
-    display: block;
-	font-size: 13px;
-	font-weight: 500;
-	color: #999;
-	padding: 4px 20px;
+
+/* Restrict navigation styles to desktop only */
+@media (min-width: 992px) {
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        float: left;
+    }
+
+    a.nav:link, a.nav:visited {
+        display: block;
+        font-weight: bold;
+        width: 100%;
+        color: #FFFFFF;
+        padding: 22px;
+        background-color: #75A319;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    a.nav:hover, a.nav:active {
+        color: #FFFFFF;
+        background-color: #670FA1;
+    }
+
+    a.nav.active {
+        color: #FFFFFF;
+        background-color: #670FA1;
+    }
+
+    #sidebar-menu .main-menu a {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        color: #999;
+        padding: 4px 20px;
+    }
+    #sidebar-menu .main-menu a:hover {
+        color: #11427D;
+        text-decoration: none;
+        background-color: transparent;
+        border-left: 1px solid #11427D;
+    }
+
+    #sidebar-menu .sub-menu a {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 30px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    #custom-bootstrap-menu.navbar-default .navbar-brand {
+        color: rgba(119, 119, 119, 1);
+    }
+    #custom-bootstrap-menu.navbar-default {
+        font-size: 14px;
+        background-color: rgba(255, 255, 255, 1);
+        border-width: 0px;
+        border-radius: 0px;
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+        color: rgba(0, 0, 0, 1);
+        background-color: rgba(255, 255, 255, 1);
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(97, 179, 101, 1);
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+    #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+    #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(161, 47, 189, 1);
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-toggle {
+        border-color: #a12fbd;
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+    #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+        background-color: #a12fbd;
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+        background-color: #a12fbd;
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+    #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+        background-color: #ffffff;
+    }
 }
-#sidebar-menu .main-menu a:hover {
-	color: #11427D;
-	text-decoration: none;
-	background-color: transparent;
-	border-left: 1px solid #11427D;
-}
-
-#sidebar-menu .sub-menu a {
-	padding-top: 1px;
-	padding-bottom: 1px;
-	padding-left: 30px;
-	font-size: 12px;
-	font-weight: 400;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
