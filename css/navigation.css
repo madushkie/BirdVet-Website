@@ -8,8 +8,15 @@
 	height: 292px;
 }
 
+/* */
 div.marketing div.row p {
 	text-align: justify;
+}
+
+h1.page-header {
+    font-size: 250%;
+    font-variant: small-caps;
+
 }
 
 h5 {
@@ -107,6 +114,23 @@ ul {
 	padding: 0;
 }
 
+/* Restrict navigation styles to mobile only */
+@media (max-width: 768px) {
+
+    div.navbar-header {
+        background-color: #FFFFFF;
+    }
+
+    button.navbar-toggle, div.navbar-toggle:active{
+        margin-top: 45px;
+        margin-bottom: 45px;
+        border-style: none;
+    }
+
+    div.navbar-collapse, .navbar-menubuilder, .collapse, .in{
+        background-color: #FFFFFF;
+    }
+}
 
 /* Restrict navigation styles to desktop only */
 @media (min-width: 992px) {
