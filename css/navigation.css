@@ -3,6 +3,42 @@
 [class="col-sm-12"] h1 {
   background-color: #CCE5CC;
 }
+/*Body font styling*/
+body {
+    font-family: 'Noto Sans';
+}
+/*Logo styling*/
+img.logo {
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    float: left;
+}
+
+/*Navigation Menu Styling*/
+div.navbar {
+    margin-bottom: 5px;
+}
+
+/* Carousel and contact information Section - Index Page*/
+div.panel-address > div.panel-heading{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+/*Specialisation header*/
+h4.specialisation {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #76BA1E;
+    color: #ffffff;
+    border: solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 27px 8px rgb(231, 243, 231);
+}
 
 .contact-summary {
 	height: 292px;
@@ -53,9 +89,9 @@ div.contact-info{
 }
 
 div.panel-address{
-	border: solid;
-	border-width: 1px;
-	border-color: #E6E6E6;
+    border: solid;
+    border-width: 3px;
+    border-color: #F7EEFF;
 }
 div.col-sm-10{
 	height: inherit;
@@ -77,18 +113,8 @@ div.navigation{
 	background-color: #CCE680;
 }
 
-img.logo {
-	padding: 25px;
-}
-
-
 h4.contact {
 	font-weight: bold;
-}
-
-
-img.logo {
-	float: left;
 }
 
 h2.contact {
@@ -132,10 +158,9 @@ ul {
     }
 }
 
-/* Restrict navigation styles to desktop only */
-@media (min-width: 992px) {
-
-    ul {
+/* Restrict navigation styles to tablet only */
+@media (min-width: 970px) and (max-width: 1200px) {
+        ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -204,11 +229,125 @@ ul {
     #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
         color: rgba(0, 0, 0, 1);
         background-color: rgba(255, 255, 255, 1);
+        margin-top:0px;
     }
     #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
     #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
         color: rgba(255, 255, 255, 1);
-        background-color: rgba(97, 179, 101, 1);
+        background-color: rgba(149, 50, 179, 0.8);
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+    #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+    #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(149, 50, 179, 0.8);
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-toggle {
+        border-color: #a12fbd;
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+    #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+        background-color: #a12fbd;
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+        background-color: #a12fbd;
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+    #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+        background-color: #ffffff;
+    }
+    /* Fixed height for panel-address which displays contact details */
+    div.panel-address > div.panel-heading{
+            padding-top: 15px;
+            padding-bottom: 5px;
+            margin-bottom: 0;
+            width: 33%;
+            display: inline-block;
+            float: left;
+    }
+    div.panel.panel-address {
+        height: 135px;
+    }
+
+}
+
+/* Restrict navigation styles to desktop only */
+@media (min-width: 1200px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        float: left;
+    }
+
+    a.nav:link, a.nav:visited {
+        display: block;
+        font-weight: bold;
+        width: 100%;
+        color: #FFFFFF;
+        padding: 22px;
+        background-color: #75A319;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    a.nav:hover, a.nav:active {
+        color: #FFFFFF;
+        background-color: #670FA1;
+    }
+
+    a.nav.active {
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(161, 47, 189, 1);
+    }
+
+    #sidebar-menu .main-menu a {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        color: #999;
+        padding: 4px 20px;
+    }
+    #sidebar-menu .main-menu a:hover {
+        color: #11427D;
+        text-decoration: none;
+        background-color: transparent;
+        border-left: 1px solid #11427D;
+    }
+
+    #sidebar-menu .sub-menu a {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 30px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    #custom-bootstrap-menu.navbar-default .navbar-brand {
+        color: rgba(119, 119, 119, 1);
+    }
+    #custom-bootstrap-menu.navbar-default {
+        font-size: 14px;
+        background-color: rgba(255, 255, 255, 1);
+        border-width: 0px;
+        border-radius: 0px;
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+        color: rgba(0, 0, 0, 1);
+        background-color: rgba(255, 255, 255, 1);
+        margin-top:0px;
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(149, 50, 179, 0.8);
     }
     #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
     #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
@@ -230,4 +369,19 @@ ul {
     #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
         background-color: #ffffff;
     }
+    /* Fixed height for panel-address which displays contact details */
+    div.panel.panel-address {
+        padding-top: 32px;
+        min-height: 327px;
+    }
+}
+
+/*footer styling*/
+
+footer .footer-below {
+    padding: 7px;
+    color: #000000;
+    text-align: center;
+    margin-top: 15px;
+    background-color: #FFFFFF;
 }
